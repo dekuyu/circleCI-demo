@@ -7,4 +7,7 @@ jobs:
     steps:
       - run: echo "hello world" # run the `echo` command
       - run: npm -v
-
+workflows:
+  my-workflow:
+    jobs:
+      - hello-job
